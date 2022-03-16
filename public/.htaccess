@@ -3,7 +3,7 @@ RewriteEngine On
 #Writes non existing to /public
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /public [L]
+RewriteRule . /public
 
 #Writes /x/y to index?controller=x&action=y
 RewriteCond %{REQUEST_FILENAME} !-d
